@@ -1,0 +1,168 @@
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #333;
+    color: white;
+    font-size: 16px;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+img{
+    display: block;
+    width: 100%;
+    height:auto;
+}
+
+h1, h2, h3{
+    margin: 0;
+    padding: 1em 0;
+}
+ p{
+     margin: 0;
+     padding: 1em 0;
+ }
+ 
+ .button{
+     display: inline-block;
+     background:#333;
+     color:white;
+     text-decoration:none;
+     padding: 1em 2em;
+     border:1px solid #666;
+     border-radius: .5em;
+     margin:3em 0;
+ }
+ 
+ .button:hover{
+   background:#eaeaea;
+   color: #333;
+ }
+ 
+ /* Header */
+ 
+ #showcase{
+     min-height: 450px;
+ }
+ 
+ #showcase h1{
+     padding-top: 3em;
+     
+ }
+ 
+ #showcase .bg-img{
+     position:absolute;
+     background:#333 url('../img/pexels-showcase.jpeg');
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     width:100%;
+     height:450px;
+     z-index: -1;
+     opacity:0.2;
+ }
+ 
+ #showcase .content-wrap, 
+ #about .content-wrap {
+     padding: 0 1.5em;
+ }
+ 
+ /* About */
+ 
+ #about{
+     background:#eaeaea;
+     color: #333;
+     padding-bottom: 100px;
+     
+ }
+ 
+ /* Info */
+ 
+ #info{
+     padding: 2em 1em 1em;
+ }
+ 
+ #info ul{
+     list-style: none;
+     margin: 0;
+     padding: 0;
+ }
+ 
+ #info li{
+     margin-bottom: 1em;
+     background:white;
+     color:#333;
+ }
+ 
+ .card-content{
+     padding: 1.5em;
+ }
+ 
+ /* Needs */
+ 
+ #needs{
+     background:white;
+     color:#333;
+     padding: 2em;
+ }
+ 
+ /* Contacts Boxes */
+ 
+ #contact .box{
+     padding: 2em;
+     color:white;
+ }
+ 
+ #contact .box:first-child{
+     background:#7B68EE;
+ }
+ 
+ /* Footer */
+ 
+ #main-footer{
+     padding: 2em;
+     background:black;
+     color: white;
+     text-align: center;
+ }
+ 
+ /* Media Queries */
+ 
+@media (min-width: 700px){
+     .grid{
+         display: grid;
+         grid-template-columns: 1fr repeat(2, minmax(auto, 30em)) 1fr;
+     }
+     
+     #about .content-text{
+         columns:2;
+         column-gap:2em;
+     }
+     
+     #about .content-text p{
+         padding-top: 0;
+     }
+     
+     .content-wrap,
+     #info ul{
+         grid-column: 2/4;
+     }
+     
+     .box{
+         grid-column: span 2;
+     }
+     
+     #main-footer div{
+         grid-column: 2/4;
+     }
+     
+     #info ul{
+         display: flex;
+         justify-content: space-around;
+     }
+     
+     #info li{
+         width: 31%;
+     }
+
+ }
