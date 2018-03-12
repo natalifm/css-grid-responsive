@@ -114,7 +114,8 @@ h1, h2, h3{
  }
  
  #contact .box:first-child{
-     background:#7B68EE;
+     background:#eaeaea;
+     color: black;
  }
  
  /* Footer */
